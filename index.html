@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script defer="" type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <title>Chuva - Exercício Frontend</title>
+</head>
+
+<body>
+    <!-- Cabeçalho do Navbar-->
+    <nav class="sidebar">
+    <div class="sidebar-titlebox">
+    <h1 class="sidebar-title">SLACA 2019</h1>
+    </div>
+    <div class="sidebar-img">
+    <img class="sidebar-logo" src="./assets/img/dewey4.png">
+    </div>
+    <!-- Navegação -->
+    <div class="sidebar-nav">
+    <ul>
+        <li class="nav-item"><a class="nav-link" href="#">Apresentação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Comitês</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Eixos temáticos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trabalhos">Trabalhos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+    </ul>
+    </div>
+    </nav>
+    <!-- Cabeçalho da pagina -->
+    <div class="container">
+    <header>
+        <!-- Cabeçalho do artigo -->
+        <div class="header">
+            <ul>
+            <p id="subtitulo">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+            <h2 id="titulo">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+            <p id="issn">ISSN: 1234-5678</p>
+        </ul>
+        <div class="header-lang">
+        <button onclick="dropdownMenu()" class="lang-btn">
+            <i class="fa-solid fa-globe"></i> PT, BR <i class="fa fa-caret-down" id="chevron"></i>
+        </button>
+         </div>
+         <div class="header-login">
+            <ul>
+                <h5>Bem vindo!</h5>
+                <h6>alguem12@galoascience.com</h6>
+            </ul>
+            <a class="profile-img" href="#" style="cursor: pointer;">
+                <span class="badge">2</span>
+             <img src="assets/img/profile.png" alt="User profile image">
+             
+            </a>
+         </div>
+        </div>
+        </header>
+        <div class="content-container">
+            <h1 class="content-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h1>
+        <div class="right-wrapper">
+            <div class="content-buttons">
+                <button type="submit" class="download-btn"><i class="fa fa-download"></i>Download</button>
+                <button type="submit" class="star-btn"><i class="fa fa-star"></i></button>
+                <button type="submit" class="doi-btn"><img src="./assets/img/doi.svg"></img></button>
+            </div>
+            <a href="#">COMO CITAR ESSE TRABALHO?</a>
+            <div class="content-details">
+                <div class="details-header"><h3>Detalhes</h3></div>
+                <div class="details-desc"><div class="description"><p id="caracteristicas">Tipo de Apresentação:<b> Pôster</b><br>
+                    Eixo temático: <b> Alimentação e saúde (AS)</b><br>
+                    Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b><br>
+                    <br>
+                </p>
+                    <b>Autores:</b><br>
+                    Galileo Galilei¹<br>
+                    Berta Lange de Morretes²<br>
+                    Isaac Newton³<br>
+                    Cesar Lattes¹<br>
+                    Stephen Hawking⁴<br>
+                    <br>
+                    <p id="universidades">
+                    ¹Universidade Estadual de Campinas<br>
+                    ²Universidade de São Paulo<br>
+                    ³Instituto Nacional de Pesquisas Espaciais<br>
+                    ⁴Universidade Federal do Rio de Janeiro<br>
+                </p><br><br><br><br>hallo welt!</div></div>
+            </div>
+        </div>
+            <div class="footer"></div>
+    </div>
+</div>
+        </body>
+
+</html>
