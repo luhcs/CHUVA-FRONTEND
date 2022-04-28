@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,94 +8,201 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script defer="" type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <title>Chuva - Exercício Frontend</title>
 </head>
 
 <body>
     <!-- Cabeçalho do Navbar-->
     <nav class="sidebar">
-    <div class="sidebar-titlebox">
-    <h1 class="sidebar-title">SLACA 2019</h1>
-    </div>
-    <div class="sidebar-img">
-    <img class="sidebar-logo" src="./assets/img/dewey4.png">
-    </div>
-    <!-- Navegação -->
-    <div class="sidebar-nav">
-    <ul>
-        <li class="nav-item"><a class="nav-link" href="#">Apresentação</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Comitês</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Eixos temáticos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#trabalhos">Trabalhos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-    </ul>
-    </div>
+        <div class="sidebar-titlebox">
+            <h1 class="sidebar-title">SLACA 2019</h1>
+        </div>
+        <div class="sidebar-img">
+            <img class="sidebar-logo" src="./assets/img/dewey4.png">
+        </div>
+        <!-- Navegação -->
+        <div class="sidebar-nav">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Apresentação</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Comitês</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Eixos temáticos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Trabalhos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- Cabeçalho da pagina -->
     <div class="container">
-    <header>
-        <!-- Cabeçalho do artigo -->
-        <div class="header">
-            <ul>
-            <p id="subtitulo">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-            <h2 id="titulo">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
-            <p id="issn">ISSN: 1234-5678</p>
-        </ul>
-        <div class="header-lang">
-        <button onclick="dropdownMenu()" class="lang-btn">
-            <i class="fa-solid fa-globe"></i> PT, BR <i class="fa fa-caret-down" id="chevron"></i>
-        </button>
-         </div>
-         <div class="header-login">
-            <ul>
-                <h5>Bem vindo!</h5>
-                <h6>alguem12@galoascience.com</h6>
-            </ul>
-            <a class="profile-img" href="#" style="cursor: pointer;">
-                <span class="badge">2</span>
-             <img src="assets/img/profile.png" alt="User profile image">
-             
-            </a>
-         </div>
-        </div>
+        <header>
+            <!-- Cabeçalho do artigo -->
+            <div class="header">
+                <ul>
+                    <p id="subtitulo">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                    <h2 id="titulo">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+                        <p id="issn">ISSN: 1234-5678</p>
+                </ul>
+                <div class="header-lang">
+                    <button onclick="dropdownMenu()" class="lang-btn">
+                        <i class="fa-solid fa-globe"></i> PT, BR <i class="fa fa-caret-down" id="chevron"></i>
+                    </button>
+                </div>
+                <div class="header-login">
+                    <ul>
+                        <h5>Bem vindo!</h5>
+                        <h6>alguem12@galoascience.com</h6>
+                    </ul>
+                    <a class="profile-img" href="#" style="cursor: pointer;">
+                        <span class="badge">2</span>
+                        <img src="assets/img/profile.png" alt="User profile image">
+
+                    </a>
+                </div>
+            </div>
         </header>
         <div class="content-container">
-            <h1 class="content-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h1>
-        <div class="right-wrapper">
-            <div class="content-buttons">
-                <button type="submit" class="download-btn"><i class="fa fa-download"></i>Download</button>
-                <button type="submit" class="star-btn"><i class="fa fa-star"></i></button>
-                <button type="submit" class="doi-btn"><img src="./assets/img/doi.svg"></img></button>
-            </div>
-            <a href="#">COMO CITAR ESSE TRABALHO?</a>
-            <div class="content-details">
-                <div class="details-header"><h3>Detalhes</h3></div>
-                <div class="details-desc"><div class="description"><p id="caracteristicas">Tipo de Apresentação:<b> Pôster</b><br>
-                    Eixo temático: <b> Alimentação e saúde (AS)</b><br>
-                    Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b><br>
-                    <br>
+            <section class="content-header">
+                <div class="left-wrapper">
+                    <h1 class="content-title"> Análise sensorial de preparações funcionais desenvolvidas para escolares
+                        entre 09 e 15 anos, do município de Campinas/SP </h1>
+                    <div class="video-container">
+                        <video id="player" playsinline controls data-poster="/assets/img/dewey1.png">
+                            <source src="/assets/videos/video.mp4" type="video/mp4" />
+                            <track kind="captions" label="English captions" src="/assets/videos/video.vtt" srclang="en"
+                                default />
+                        </video>
+                    </div>
+                </div>
+                <div class="right-wrapper">
+                    <div class="content-buttons">
+                        <button type="submit" class="download-btn"><i class="fa fa-download"></i>Download</button>
+                        <button type="submit" class="star-btn"><i class="fa fa-star"></i></button>
+                        <button type="submit" class="doi-btn"><img src="./assets/img/doi.svg"></img></button>
+                    </div>
+                    <a href="#">COMO CITAR ESSE TRABALHO?</a>
+                    <div class="content-details">
+
+                        <h3 class="title">Detalhes</h3>
+
+                        <div class="details-desc">
+                            <div class="description">
+                                <p id="caracteristicas">Tipo de Apresentação:<strong> Pôster</strong><br>
+                                    Eixo temático: <strong> Alimentação e saúde (AS)</strong><br>
+                                    Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong><br>
+
+                                </p>
+                                <br>
+                                <p id="autores">
+                                    <strong>Autores:</strong><br>
+                                    Galileo Galilei¹<br>
+                                    Berta Lange de Morretes²<br>
+                                    Isaac Newton³<br>
+                                    Cesar Lattes¹<br>
+                                    Stephen Hawking⁴<br><br>
+                                </p>
+                                <p id="universidades">
+
+                                    ¹Universidade Estadual de Campinas<br>
+                                    ²Universidade de São Paulo<br>
+                                    ³Instituto Nacional de Pesquisas Espaciais<br>
+                                    ⁴Universidade Federal do Rio de Janeiro<br>
+                                </p><br><br><br><br>Sobre os ombros de gigantes!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <article id="sum">
+                <h1 class="title">Resumo</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum esse alias quod eaque in sint
+                    temporibus at atque voluptates voluptas autem fuga labore tempore dolorem, impedit magni libero
+                    quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ex. Enim adipisci
+                    voluptatum quidem tempora perspiciatis, corrupti sequi eius, neque atque et tempore illum
+                    necessitatibus voluptatem, beatae vel dolore laboriosam. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tenetur incidunt numquam laborum nihil a maiores excepturi eos culpa saepe rerum,
+                    magni molestiae doloribus sit. Iste maxime eligendi error. Laudantium, quas. <span id="ellipsis">...
+                        <b id="more">ver mais</b></span> <span id="expand"> Dolor?.
+                        <br><br>
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptate impedit consequuntur
+                        repellat, illum sit magnam cum porro reprehenderit voluptatibus. Tempore corrupti quidem fugit,
+                        provident quis ad fuga laborum veniam.
+                        <br><br>
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quae, a quisquam voluptate
+                        voluptatum sapiente excepturi impedit fugiat! Provident ratione repellat culpa ipsa animi
+                        commodi veritatis possimus corrupti doloremque porro.
+                        <br><br>
+
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos suscipit labore quo odit quaerat
+                        eveniet maiores soluta aspernatur nam deleniti. At totam reprehenderit obcaecati, nulla
+                        doloribus expedita. Est, non perspiciatis!</span>
                 </p>
-                    <b>Autores:</b><br>
-                    Galileo Galilei¹<br>
-                    Berta Lange de Morretes²<br>
-                    Isaac Newton³<br>
-                    Cesar Lattes¹<br>
-                    Stephen Hawking⁴<br>
-                    <br>
-                    <p id="universidades">
-                    ¹Universidade Estadual de Campinas<br>
-                    ²Universidade de São Paulo<br>
-                    ³Instituto Nacional de Pesquisas Espaciais<br>
-                    ⁴Universidade Federal do Rio de Janeiro<br>
-                </p><br><br><br><br>hallo welt!</div></div>
-            </div>
-        </div>
+
+            </article>
+            <article id="disc">
+                <h1 class="title">Discussões</h1>
+                <div id="show">
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div class="disc-imgs">
+                        <img src="assets/img/icone1.png" alt="Grow">
+                        <img src="assets/img/icone2.png" alt="Question and answer">
+                        <img src="assets/img/icone3.png" alt="Cooperate">
+                    </div>
+
+                    <p>
+                        Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+                        questionamentos ou sugestões para o autor!
+                    </p>
+
+                    <button id="topic-btn">
+                        <i class="fa fa-plus"></i> criar tópico
+                    </button>
+                </div>
+
+                
+
+
+                <div id="topic" class="hidden">
+                    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+
+                    <form action="">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+    
+                        <label for="content">Conteúdo</label>
+                        <textarea name="txt-content" id="txt-content"></textarea>
+                    </form>
+
+                    <div class="show-2">
+                        <h2> Seu tópico foi enviado com sucesso! :D</h2>
+                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                        <a id="topic-link" href="#">Descubra outros trabalhos!</a>
+                        <button id="newtopic-btn">
+                            <span>criar novo tópico</span>
+                        </button>
+                        <div id="sucess-card">
+                            
+                    </div>
+                    </div>
+                
+            </article>
+            
+
             <div class="footer"></div>
+        </div>
     </div>
-</div>
-        </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer="" type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js">
+    </script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <script src="scripts.js"></script>
+</body>
 
 </html>
